@@ -1,0 +1,31 @@
+---
+switch-01:
+  hostname: "192.168.1.10"
+  platform: "cisco_ios"
+  groups:
+    - cisco
+    - core
+
+switch-02:
+  hostname: "192.168.1.11"
+  platform: "cisco_ios"
+  groups:
+    - cisco
+    - access
+
+switch-03:
+  hostname: "192.168.1.12"
+  platform: "cisco_ios"
+  username: "admin"
+  password: "cisco1234"
+  connectio_options:
+    netmiko:
+      extras:
+        secret: "enable1234"
+
+router-01:
+  hostname: "192.168.1.1"
+  platform: "cisco_ios"
+  groups:
+    - cisco
+    - core

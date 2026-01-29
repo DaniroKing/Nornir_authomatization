@@ -1,0 +1,23 @@
+---
+cisco:
+  platform: "cisco_ios"
+  username: "admin"
+  use_keys: true
+  key_file: "~/.ssh/is_rsa"
+
+juniper:
+  platform: "juniper_junos"
+  username: "admin"
+  password: "juniper123"
+
+core:
+  data:
+    type: "core"
+    backup_priority: "high"
+    backup_schedule: "hourly"
+
+access:
+  data:
+    type: "access"
+    backup_priority: "medium"
+    backup_schedule: "daily"

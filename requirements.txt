@@ -1,0 +1,4 @@
+nornir
+netmiko
+nornir-utils
+pyyaml

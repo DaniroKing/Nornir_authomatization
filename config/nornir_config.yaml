@@ -1,0 +1,16 @@
+---
+runner:
+  plugin: threaded
+  options:
+    num_workers: 20
+
+inventory:
+  plugin: YAMLInventory
+  options:
+    hosts_file: "config/inventory/hosts.yaml"
+    groups_file: "config/inventory/groups.yaml"
+
+logging:
+  enabled: true
+  level: "INFO"
+  file: "logs/nornir.log"
